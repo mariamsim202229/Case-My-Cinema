@@ -1,0 +1,83 @@
+{
+    "cinema": {
+      "name": "Leos Bio",
+      "description": "Välkommen till vår biosalong! Idag vill vi ta er med på en spännande resa in i vår biosalong, en plats där underhållning, gemenskap och magi möts. Vår biosalong är mer än bara en plats där du ser på film, det är en destination där du kan koppla av, känna spänning och skapa minnen. Vi är stolta över att välkomna er till vår biosalong och ser fram emot att dela fantastiska filmögonblick med er. Vi hoppas att ni kommer att uppskatta vår omsorgsfullt utformade miljö, högkvalitativa teknik och hjärtliga service. Så kom, sätt dig till rätta och låt oss tillsammans skapa minnen som varar livet ut i vårt tempel för film och underhållning.",
+      "movies": [
+        {
+          "title": "Movie A",
+          "duration": "120 mins",
+          "shows": [
+            {
+              "time": "2023-09-07T16:00:00.000Z",
+              "room": "Room 1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "5:00 PM",
+              "room": "Room 2",
+              "seats": [
+                {"seatNumber": "B1", "booked": false},
+                {"seatNumber": "B2", "booked": true}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Movie B",
+          "duration": "100 mins",
+          "shows": [
+            {
+              "time": "2023-09-07T15:00:00.000Z",
+              "room": "Room 3",
+              "seats": [
+                {"seatNumber": "C1", "booked": true},
+                {"seatNumber": "C2", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Movie C",
+          "duration": "140 mins",
+          "shows": []
+        },
+        {
+          "title": "Movie D",
+          "duration": "110 mins",
+          "shows": [
+            {
+              "time": "2023-09-07T17:00:00.000Z",
+              "room": "Room 2",
+              "seats": [
+                {"seatNumber": "D1", "booked": false},
+                {"seatNumber": "D2", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Movie E",
+          "duration": "90 mins",
+          "shows": [
+            {
+              "time": "2023-09-07T18:00:00.000Z",
+              "room": "Room 1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
