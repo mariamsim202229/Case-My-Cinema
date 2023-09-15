@@ -1,31 +1,25 @@
 .MyHeader {
-
   justify-content: center;
   align-items: center;
-
 }
 
 h1 {
   color: darkmagenta;
   font-family: fantasy;
-  justify-items: center;
 }
-
 
 .cinemaApp {
   max-width: 600px;
-  border: solid 1px brown;
   padding: 20px;
-  background-color:rosybrown;
+  background-color: rosybrown;
   margin-left: 200px;
 }
 
 
-p {
-  font-family: fantasy;
-  font-style: italic;
-  color: black;
-  text-align: justify;
-  padding: 5px;
-  max-width: 600px;
+.navbar {
+
+  background-color: hotpink;
+  color: blue;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
 }

@@ -5,7 +5,7 @@ function BookingPage () {
     return (
 
         <div>
-
+<p>book your movie here</p>
         </div>
     )
 }
