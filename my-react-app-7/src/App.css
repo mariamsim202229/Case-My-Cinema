@@ -3,7 +3,8 @@
   align-items: center;
 }
 
-h1 {
+h1,
+h2 {
   color: darkmagenta;
   font-family: fantasy;
 }
@@ -12,12 +13,17 @@ h1 {
   max-width: 600px;
   padding: 20px;
   background-color: rosybrown;
-  margin-left: 200px;
+  margin-left: 10px;
 }
 
+p {
+  text-align: justify;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: darkgreen;
+}
 
 .navbar {
-
   background-color: hotpink;
   color: blue;
   font-size: x-large;

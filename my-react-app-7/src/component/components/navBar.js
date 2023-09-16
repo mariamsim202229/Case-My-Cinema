@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
     return (
-
+<header className="MyHeader">
         <nav className="navbar">
             <div>
                 <h1>Leos Bio</h1>
@@ -12,8 +12,11 @@ const Navbar = () => {
                 <br></br>
                 <Link to='/booking'> Boka film</Link>
             </div>
-        </nav>)
-}
+        </nav>
 
+        </header>
+
+    )
+}
 
 export default Navbar;
