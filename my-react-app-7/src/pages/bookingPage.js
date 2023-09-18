@@ -1,11 +1,17 @@
 import React from 'react';
+import Shows from '../component/components/shows';
+import Navbar from '../component/components/navBar';
+import Footer from '../component/footer';
 
-function BookingPage () {
+function BookingPage() {
 
     return (
 
-        <div>
-<p>book your movie here</p>
+        <div className='bookingApp'>
+            <Navbar />
+            <Shows />
+            <br/>
+            <Footer />
         </div>
     )
 }

@@ -10,22 +10,17 @@ import {
 import WelcomePage from './pages/welcomePage';
 import BookingPage from './pages/bookingPage';
 import ErrorPage from './error-page';
-import Navbar from './component/components/navBar';
 
 function App() {
   return (
 
     <Router>
-      <div className='cinemaApp'>
-        <Navbar />
-        <div className='content'>
-          <Routes>
-            <Route path='/' element={<WelcomePage />} />
-            <Route path='/booking' element={<BookingPage />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-        </div>
-
+      <div className='content'>
+        <Routes>
+          <Route path='/' element={<WelcomePage />} />
+          <Route path='/booking' element={<BookingPage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
       </div>
     </Router>
   );

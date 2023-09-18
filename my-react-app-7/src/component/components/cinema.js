@@ -25,7 +25,7 @@ export default function Cinema() {
 
                 const data = await response.json();
                 setCinemaData(data);
-                // setMovies(cinemaData.cinema.movies);
+               
 
             } catch (err) {
                 setError(err);
@@ -47,14 +47,15 @@ export default function Cinema() {
         return <div>Error: {error.message}</div>;
     }
 
-
     return (
-        <div className='cinemaApp'>
+        <div>
             <h1> {cinemaData.cinema.name} </h1>
             <p> {cinemaData.cinema.description} </p>
         </div>
     )
 }
+
+
 
 
 
