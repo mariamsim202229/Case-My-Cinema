@@ -1,7 +1,7 @@
 import React from 'react';
-import Shows from '../component/components/shows';
+import Shows from '../component/components/movieShows';
 import Navbar from '../component/components/navBar';
-import Footer from '../component/footer';
+import Footer from '../component/components/footer';
 
 function BookingPage() {
 

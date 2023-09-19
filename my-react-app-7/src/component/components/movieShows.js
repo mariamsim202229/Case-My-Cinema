@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-
 export default function Shows() {
 
   // state to store cinema data
@@ -25,10 +24,8 @@ export default function Shows() {
 
         const data = await response.json();
         setMovies(data.cinema.movies);
-        const allShows = data.cinema.movies.reduce((acc, movie) => acc.concat(movie.shows), []);
+        const allShows = data.cinema.movies.flatMap(movie => movie.shows);
         setShows(allShows);
-
-
 
       } catch (err) {
         setError(err);
@@ -51,32 +48,25 @@ export default function Shows() {
   }
 
   return (
-    <div className='bookingShow' >
+    <>
       <h1>BOKA DIN FILM HÄR</h1>
-      <br />
-      <div className="movieDiv">
-
+      <p>Välj mellan 5 filmer och mellan 4 olika föreställningar för varje film</p>
+      <div className='bookingShow' >
         {movies.map((movie, i) => (
           <div key={i}>
-            {movie.title}
-            <br />
-            {movie.duration}
-            <br />
+            <h2>{movie.title}</h2>
+            <p>{movie.duration}</p>
             {movie.shows.map((show, j) => (
-              <div key={`${i}-${j}`} className="showDiv">
-                {show.date}
-                <br />
-                {show.time}
-                <br />
-                {show.room}
-                <br />
-                Antal lediga sittplatser: {show.seats.filter(seat => !seat.booked).length}
+              <div key={j} className="showDiv">
+                <p>{show.date}</p>
+                <p>Tid: {show.time}</p>
+                <p> {show.room}</p>
+                <p>Antal lediga sittplatser: {show.seats.filter(seat => !seat.booked).length}</p>
               </div>
             ))}
           </div>
         ))}
       </div>
-    </div>
-
+    </>
   )
 }

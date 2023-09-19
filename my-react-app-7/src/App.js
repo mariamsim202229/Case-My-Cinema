@@ -5,26 +5,28 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
-// import { useState, useEffect } from 'react';
+import ErrorBoundary from './ErrorBoundary';
 import WelcomePage from './pages/welcomePage';
 import BookingPage from './pages/bookingPage';
-import ErrorPage from './error-page';
+// import ErrorPage from './error-page';
+
+
 
 function App() {
   return (
 
     <Router>
-      <div className='content'>
+     
         <Routes>
           <Route path='/' element={<WelcomePage />} />
           <Route path='/booking' element={<BookingPage />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorBoundary />} />
         </Routes>
-      </div>
+   
     </Router>
   );
 }
+
 
 export default App;
 

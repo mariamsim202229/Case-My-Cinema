@@ -6,6 +6,11 @@ h1 {
   left: 35%;
 }
 
+h2 {
+  padding: 5px;
+  border: solid 1px darkgoldenrod;
+}
+
 .link {
   color: blanchedalmond;
   font-size: 30px;
@@ -20,48 +25,59 @@ h1 {
 
 .bookingApp {
   background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2luZW1hfGVufDB8fDB8fHww&w=1000&q=80");
-  padding: 20px;
+  padding: 10px;
   background-size: cover;
 }
 
 .bookingShow {
-  width: 1100px;
+  display: flex;
+  color: darkgoldenrod;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-p {
-  margin-left: 30%;
-  text-align: center;
-  width: 500px;
+.text {
+  /* margin-left: 30%; */
+
+  text-align: justify;
+  width: fit-content;
   font-size: x-large;
   color: darkgoldenrod;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 26px;
+  /* padding: 26px; */
   font-weight: bolder;
-  background-color: rgba(245, 245, 220, 0.7);
-  border-radius: 18px;
+  /* background-color: rgba(245, 245, 220, 0.7);
+  border-radius: 18px; */
 }
+
 
 .navbar {
   height: fit-content;
   display: flex;
   justify-items: left;
-  height: 100px;
+  height: 200px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .movieDiv {
-  display: flex;
+  /* display: flex; */
   background-size: cover;
   background-position: center;
   text-align: center;
-  border: solid 2px darkgoldenrod;
-  color: darkgoldenrod;
-  font-size: 30px;
-  font-family: cursive;
+  
 }
+
+p {
+  font-size: larger;
+  color: darkgoldenrod;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 
 .showDiv {
   border: solid 1px goldenrod;
+  text-align: center;
+  padding: 5px;
 }
 
 .movieCard {
@@ -80,6 +96,7 @@ p {
 
 .flexMovie {
   display: flex;
+  width: min-content;
   background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2luZW1hfGVufDB8fDB8fHww&w=1000&q=80");
   background-size: cover;
   background-position: center;
@@ -127,5 +144,5 @@ img {
   font-size: large;
   color: blanchedalmond;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
+  justify-content: center;
 }

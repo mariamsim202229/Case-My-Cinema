@@ -1,9 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-
 export default function Cinema() {
-
     // state to store cinema data
     const [cinemaData, setCinemaData] = useState(null);
 
@@ -22,10 +20,8 @@ export default function Cinema() {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-
                 const data = await response.json();
                 setCinemaData(data);
-               
 
             } catch (err) {
                 setError(err);
@@ -46,11 +42,10 @@ export default function Cinema() {
     if (error) {
         return <div>Error: {error.message}</div>;
     }
-
     return (
         <div>
             <h1> {cinemaData.cinema.name} </h1>
-            <p> {cinemaData.cinema.description} </p>
+            <p className='text'> {cinemaData.cinema.description} </p>
         </div>
     )
 }
