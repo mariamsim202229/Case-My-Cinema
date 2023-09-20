@@ -1,6 +1,8 @@
 import React from "react";
 
 function Footer() {
+
+    //footer component exported and inported in all route pages
     return (
         <div>
             <footer className="myFooter">

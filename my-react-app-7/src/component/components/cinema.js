@@ -43,6 +43,7 @@ export default function Cinema() {
         return <div>Error: {error.message}</div>;
     }
     return (
+        // fetching data from json file about the name and description about the cinema
         <div>
             <h1> {cinemaData.cinema.name} </h1>
             <p className='text'> {cinemaData.cinema.description} </p>

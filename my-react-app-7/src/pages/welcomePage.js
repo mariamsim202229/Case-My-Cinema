@@ -8,6 +8,7 @@ import Footer from '../component/components/footer';
 
 export default function WelcomePage() {
 
+  //the homepage component and its components imported in the page
   return (
     <div className='cinemaApp'>
       <Navbar />

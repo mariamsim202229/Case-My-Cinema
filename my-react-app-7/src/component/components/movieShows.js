@@ -50,10 +50,14 @@ export default function Shows() {
   }
 
   return (
+
+    //   mapping all the movies, and shows, fetched from json file, and render it in a div
+    //filtering and displaying the number of seats which are not booked yet 
     <>
       <h1>BOKA DIN FILM HÄR</h1>
       <p className='paragraph'>Välj mellan 5 filmer och mellan 4 olika föreställningar för varje film</p>
       <div className='bookingShow' >
+
         {movies.map((movie, i) => (
           <div key={i}>
             <h2 className='titleStyle'>{movie.title}  <br/> {movie.duration}</h2>

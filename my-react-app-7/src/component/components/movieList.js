@@ -27,7 +27,7 @@ export default function MovieList() {
                 const data = await response.json();
 
                 setMovies(data.cinema.movies);
-                // setLoading(false);
+               
 
             } catch (err) {
                 setError(err);
@@ -53,10 +53,13 @@ export default function MovieList() {
     const filteredMovies = movies.filter(movie => movie.title.toLocaleLowerCase().includes(searchString));
 
     return (
+
+        //input type text for finding and filtering the movies that the user searches for
+        // a div for displaying all the movies and their detailed information by mapping the array of movies from the cinema.json file
         <div>
             <div>
                 <input id='inputSearch'
-                    placeholder="Sök film titel"
+                    placeholder="Sök"
                     type="text"
                     name="search"
                     onInput={e => setSearchString(e.target.value)}
@@ -64,6 +67,7 @@ export default function MovieList() {
             </div>
             <br />
             <h1>Veckans top 5 filmer</h1>
+            
             <div className='flexMovie'>
                 {filteredMovies.map(movie => (
                     <div className='movieCard'

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
-
+// creat a Navigation bar component and export it to the page/routes
     return (
         <header className="navbar">
             <h1 className="storTitel">BioPalatset</h1>

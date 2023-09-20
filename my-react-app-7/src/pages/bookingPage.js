@@ -7,6 +7,8 @@ function BookingPage() {
 
     return (
 
+        // a page/route for booking the shows, includes all the components 
+
         <div className='bookingApp'>
             <Navbar />
             <Shows />
