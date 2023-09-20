@@ -13,6 +13,9 @@ export default function WelcomePage() {
       <Navbar />
       <Cinema />
       <MovieList />
+      <br/>
+      <br/>
+      <br/>
       <Footer />
     </div>
   )

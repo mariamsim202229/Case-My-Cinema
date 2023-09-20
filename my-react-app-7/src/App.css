@@ -18,38 +18,42 @@ h2 {
 }
 
 .cinemaApp {
-  padding: 20px;
+  padding: 10px;
   background-image: url("https://t3.ftcdn.net/jpg/05/83/56/94/360_F_583569487_wWVhbCEqcKNmvEJExkfXRiRnB4RZqcaO.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 .bookingApp {
   background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2luZW1hfGVufDB8fDB8fHww&w=1000&q=80");
-  padding: 10px;
-  background-size: cover;
+  padding: 20px;
+  background-size: contain;
 }
 
 .bookingShow {
   display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 7%;
+  width: min-content;
   color: darkgoldenrod;
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 .text {
-  /* margin-left: 30%; */
-
-  text-align: justify;
-  width: fit-content;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  width: 700px;
   font-size: x-large;
-  color: darkgoldenrod;
+  color: gold;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* padding: 26px; */
   font-weight: bolder;
-  /* background-color: rgba(245, 245, 220, 0.7);
-  border-radius: 18px; */
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 20px;
 }
-
 
 .navbar {
   height: fit-content;
@@ -60,24 +64,26 @@ h2 {
 }
 
 .movieDiv {
-  /* display: flex; */
   background-size: cover;
   background-position: center;
   text-align: center;
-  
 }
 
 p {
-  font-size: larger;
+  font-size: x-large;
   color: darkgoldenrod;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: cursive;
+  font-weight: bolder;
 }
-
 
 .showDiv {
   border: solid 1px goldenrod;
   text-align: center;
-  padding: 5px;
+  padding: 15px;
+}
+
+.showDiv:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .movieCard {
@@ -94,6 +100,10 @@ p {
   text-align: left;
 }
 
+.movieCard:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .flexMovie {
   display: flex;
   width: min-content;
@@ -107,10 +117,10 @@ p {
 
 #inputSearch {
   border: 5px solid goldenrod;
-  width: 350px;
+  width: 500px;
   height: 50px;
   position: relative;
-  left: 30%;
+  left: 33%;
   border-radius: 20px;
   background-color: beige;
 }
@@ -130,8 +140,9 @@ img {
 .storTitel {
   justify-content: center;
   position: relative;
-  left: 30%;
-  font-size: 50px;
+  left: 40%;
+  top: 20%;
+  font-size: 60px;
   font-family: fantasy;
   color: blanchedalmond;
 }
@@ -139,10 +150,46 @@ img {
 .myFooter {
   display: flex;
   height: 100px;
-  background-color: rgba(184, 134, 11, 0.3);
+  background-color: rgba(255, 0, 0, 0.5);
   border-radius: 18px;
   font-size: large;
   color: blanchedalmond;
   font-family: Georgia, 'Times New Roman', Times, serif;
   justify-content: center;
+}
+
+button {
+  font-size: 25px;
+  background-color: blanchedalmond;
+  color: green;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: 1px solid gold;
+}
+
+button:hover {
+  background-color: silver;
+}
+
+.titleStyle {
+
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 20px;
+  height: 120px;
+  width: 200px;
+}
+
+.littleInput {
+  font-family: cursive;
+  color: black;
+  font-weight: bolder;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.paragraph {
+  position: relative;
+  left: 25%;
 }

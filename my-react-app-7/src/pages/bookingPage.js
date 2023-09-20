@@ -11,6 +11,8 @@ function BookingPage() {
             <Navbar />
             <Shows />
             <br/>
+            <br/>
+            <br/>
             <Footer />
         </div>
     )
