@@ -8,9 +8,9 @@ function Footer() {
             <footer className="myFooter">
                 <img src="https://w0.peakpx.com/wallpaper/458/671/HD-wallpaper-instagram-red-logo-red-neon-lights-creative-red-abstract-background-instagram-logo-social-network-instagram.jpg" height={80} width={20}></img>
                 <img src="https://e0.pxfuel.com/wallpapers/916/270/desktop-wallpaper-facebook-red-logo-red-neon-lights-creative-red-abstract-background-facebook-logo-social-network-facebook.jpg" height={80} width={20}></img>
-                Adress: Johannesvägen 88, Jonköping.
+                Johannesvägen 88, Jonköping.
                 <br />
-                Kuundtjänst: BioPalatset.cinema@email.com
+                BioPalatset.cinema@email.com
                 <br />
             </footer>
         </div>

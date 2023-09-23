@@ -10,7 +10,8 @@ import ErrorBoundary from './ErrorBoundary';
 import WelcomePage from './pages/welcomePage';
 import BookingPage from './pages/bookingPage';
 
-function App() {
+
+function App() {  
   return (
 
 // create a router for three routes, welcomepage, bookingpage and error page
@@ -23,7 +24,6 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
 
