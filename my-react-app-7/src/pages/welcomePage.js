@@ -26,7 +26,7 @@ export default function WelcomePage() {
   return (
     <div className='cinemaApp'>
       <Navbar />
-      <Cinema cinemaData={cinemaData}  />
+      <Cinema cinemaData={cinemaData} />
       <MovieList />
       <br />
       <br />

@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function BookingForm() {
+function BookingForm({show}) {
+
+  // console.log('BookingForm props', show, confirmationMessage);
   const [isBookingOpen, setBookingOpen] = useState(false);
   const [email, setEmail] = useState('');
+  const [confirmationMessage, setConfirmationMessage] = useState('');
 
   const handleButtonClick = () => {
     setBookingOpen(true);
+    setConfirmationMessage('');
   };
 
   const handleEmailChange = (e) => {
@@ -13,7 +17,9 @@ function BookingForm() {
   };
 
   const handleBookShow = () => {
-    alert(`Booking confirmed for email: ${email}`);
+    console.log('Booking button clicked');
+    const message = (`Boking bekräftad for mejladress: ${email}`);
+    setConfirmationMessage(message);
     setBookingOpen(false);
     setEmail('');
   };
@@ -21,16 +27,21 @@ function BookingForm() {
   return (
     <div>
       {!isBookingOpen ? (
-        <button onClick={handleButtonClick}>Book Show</button>
+        <button onClick={handleButtonClick}>Boka</button>
       ) : (
         <div>
           <input className='littleInput'
             type="email"
-            placeholder="Enter your email"
+            placeholder="skriv din mejladress"
             value={email}
             onChange={handleEmailChange}
           />
           <button onClick={handleBookShow}>Confirm Booking</button>
+        </div>
+      )}
+      {confirmationMessage && (
+        <div className='confirm'>
+          <p>{confirmationMessage}</p>
         </div>
       )}
     </div>
