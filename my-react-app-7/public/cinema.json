@@ -3,7 +3,8 @@
     "name": "Välkommen till BioPalatset",
     "description": "Välkommen till vår biosalong! Idag vill vi ta er med på en spännande resa in i vår biosalong, en plats där underhållning, gemenskap och magi möts. Vår biosalong är mer än bara en plats där du ser på film, det är en destination där du kan koppla av, känna spänning och skapa minnen.Vi är stolta över att välkomna er till vår biosalong och ser fram emot att dela fantastiska filmögonblick med er. Vi hoppas att ni kommer att uppskatta vår omsorgsfullt utformade miljö, högkvalitativa teknik och hjärtliga service. Så kom, sätt dig till rätta och låt oss tillsammans skapa minnen som varar livet ut i vårt tempel för film och underhållning.",
     "movies": [
-      { "id": 1,
+      {
+        "id": 1,
         "title": "Titanic",
         "duration": "200 minuter",
         "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/titanic-double-poster-andrea-gatti.jpg",
@@ -37,7 +38,8 @@
               }
             ]
           },
-          { "id": 2,
+          {
+            "id": 2,
             "time": "17:00",
             "room": "Rum 2",
             "seats": [
@@ -99,7 +101,7 @@
           }
         ]
       },
-      {  
+      {
         "id": 2,
         "title": "Borat",
         "duration": "100 minuter",
@@ -239,7 +241,8 @@
           }
         ]
       },
-      {  "id": 4,
+      {
+        "id": 4,
         "title": "L'Avventura",
         "duration": "150 minuter",
         "image": "https://m.media-amazon.com/images/M/MV5BNmJlYTVjZTYtZDg1Yy00NzFiLWJmYzYtYTJhMjliY2I2ZTlhXkEyXkFqcGdeQXVyMjgyNjk3MzE@._V1_FMjpg_UX1000_.jpg",
@@ -308,7 +311,8 @@
           }
         ]
       },
-      {  "id": 5,
+      {
+        "id": 5,
         "title": "Before Sunset",
         "duration": "105 minuter",
         "image": "https://m.media-amazon.com/images/M/MV5BNDI3NDI0Mzc4Nl5BMl5BanBnXkFtZTcwMzQ3MzYwNA@@._V1_.jpg",

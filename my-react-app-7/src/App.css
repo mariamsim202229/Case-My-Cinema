@@ -165,6 +165,7 @@ button {
   font-weight: bolder;
   border-radius: 20px;
   border: 1px solid gold;
+  width: 200px;
 }
 
 button:hover {
@@ -172,7 +173,6 @@ button:hover {
 }
 
 .titleStyle {
-
   background-color: rgba(255, 0, 0, 0.5);
   padding: 20px;
   height: 120px;

@@ -4,11 +4,9 @@ import Navbar from '../component/components/navBar';
 import Footer from '../component/components/footer';
 import { useCinemaData } from '../component/components/useCinemaData';
 
-
+//create a function for the route bookingpage and include all the components
 function BookingPage() {
-
     const { loading, error } = useCinemaData();
-
     // check if loading, if true then we should display a loading message
     if (loading) {
         return <div>Loading...</div>;
@@ -20,7 +18,6 @@ function BookingPage() {
     }
 
     return (
-
         // a page/route for booking the shows, includes all the components 
         <div className='bookingApp'>
             <Navbar />

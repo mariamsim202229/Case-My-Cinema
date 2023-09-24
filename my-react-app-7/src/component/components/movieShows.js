@@ -2,13 +2,11 @@ import React from 'react';
 import BookingForm from './bookingShow';
 import { useCinemaData } from './useCinemaData';
 
-
 export default function Shows() {
-  // state to store cinema data
+  // state to store movies data
   const { movies } = useCinemaData();
 
   return (
-
     //   mapping all the movies, and shows, fetched from json file, and render it in a div
     //filtering and displaying the number of seats which are not booked yet 
     <>
